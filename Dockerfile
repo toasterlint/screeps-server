@@ -3,7 +3,7 @@ WORKDIR /screeps
 RUN yarn add screeps
 
 FROM node:lts-stretch
-RUN mkdir /screeps
+RUN mkdir /screeps_data && mkdir /screeps
 VOLUME /screeps_data
 WORKDIR /screeps
 ENV DB_PATH=/screeps_data/db.json ASSET_DIR=/screeps_data/assets \
