@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ -f "/screeps_data/package.json"]; then
+if [ -f "/screeps_data/package.json" ]; then
     echo Starting Screeps
     cd /screeps_data
     if [ -z "$SCREEPS_PASS" ]; then
@@ -15,6 +15,6 @@ else
     if [ -z "$SCREEPS_PASS" ]; then
         npx screeps start
     else
-        npx screep start --password $SCREEPS_PASS
+        npx screeps start --password $SCREEPS_PASS
     fi
 fi
